@@ -2,6 +2,69 @@
 #include <stdlib.h>
 #include <string.h>
 
+void printNumbers(int numbers[]){
+    for(int i=0, i<10, i++){
+        printf("\n%d", numbers[i]);
+    }
+}
+
+void printReverseNumbers(int numbers[]){
+    for(int i=9, i>=0, i++){
+        printf("\n%d", numbers[i]);
+    }
+}
+
+void sumNumbers(int numbers[]){
+    int sum = 0;
+    for(int i=0, i<10, i++){
+        sum = sum + numbers[i];
+    }
+    int media = somma / 10;
+    printf("\nLa somma è: %d, e la media è: %d", sum, media);
+}
+
+void printEvenNumbers(int numbers[]){
+    for(int i=0, i<10, i++){
+        if(numbers[i]%2 == 0){
+            printf("\n%d", numbers[i]);
+        }
+    }
+}
+
+void printOddNumbers(int numbers[]){
+    for(int i=0, i<10, i++){
+        if(numbers[i]%2 != 0){
+            printf("\n%d", numbers[i]);
+        }
+    }
+}
+
+void searchNumbers(int numbers[]){
+    int number;
+    printf("\nInserisci il numero da cercare: ");
+    scanf("%d", &number);
+    for(int i=0, i<10, i++){
+        if(number==numbers[i]){
+            printf("\nNumero trovato");
+            break;
+        }
+    }
+    printf("\nNumero non trovato")
+}
+
+void removeNumbers(int numbers[]){
+    int number;
+    printf("\nInserisci il numero da rimuovere: ");
+    scanf("%d", &number);
+    for(int i=0, i<10, i++){
+        if(number==numbers[i]){
+            numbers
+            printf("\nNumero rimosso");
+            break;
+        }
+    }
+}
+
 int main(){
     int numbers[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     int answer;
@@ -18,33 +81,34 @@ int main(){
         printf("\n8: Scambia numeri dell'array;");
         printf("\n9: Ordina array;"); 
         printf("\nUn numero diverso: Esci.");
+        scanf("%d", &answer);
         switch(answer){
             case 1: 
-                printNumbers();
+                printNumbers(numbers);
                 break;
             case 2: 
-                printReverseNumbers();
+                printReverseNumbers(numbers);
                 break;
             case 3: 
-                sumNumbers();
+                sumNumbers(numbers);
                 break;
             case 4: 
-                printEvenNumbers();
+                printEvenNumbers(numbers);
                 break;
             case 5: 
-                printOddNumbers();
+                printOddNumbers(numbers);
                 break;
             case 6: 
-                searchNumbers();
+                searchNumbers(numbers);
                 break;
             case 7: 
-                removeNumbers();
+                removeNumbers(numbers);
                 break;
             case 8: 
-                switchNumbers();
+                switchNumbers(numbers);
                 break;
             case 9: 
-                ordinateNumbers();
+                ordinateNumbers(numbers);
                 break;
             default: 
                 exit(0);
