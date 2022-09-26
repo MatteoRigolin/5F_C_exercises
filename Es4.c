@@ -102,7 +102,7 @@ void switchNumbers(int numbers[], int arrLength){
     }
 }
 
-void ordinateNumbers(int numbers[], int arrLength){
+void sortNumbers(int numbers[], int arrLength){
     for (int i = 0; i < arrLength - 1; i++){
         for (int j = 0; j < arrLength - i - 1; j++) {
             if (numbers[j] > numbers[j + 1]) {
@@ -158,7 +158,7 @@ int main(){
                 switchNumbers(numbers, arrLength);
                 break;
             case 9: 
-                ordinateNumbers(numbers, arrLength);
+                sortNumbers(numbers, arrLength);
                 break;
             default: 
                 exit(0);
