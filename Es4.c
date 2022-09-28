@@ -19,8 +19,8 @@ void sumNumbers(int numbers[], int arrLength){
     for(int i=0, i<arrLength, i++){
         sum = sum + numbers[i];
     }
-    int media = somma / arrLength;
-    printf("\nLa somma è: %d, e la media è: %d", sum, media);
+    int average = sum / arrLength;
+    printf("\nLa somma è: %d, e la media è: %d", sum, average);
 }
 
 void printEvenNumbers(int numbers[], int arrLength){
